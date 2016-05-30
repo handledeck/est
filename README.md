@@ -17,7 +17,7 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require :vendor/:package_name
+$ composer require :handledeck/est-tools
 ```
 
 ## Usage
