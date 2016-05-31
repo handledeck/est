@@ -22,7 +22,7 @@ Add line to file config/app
  //Service provider
   Handledeck\EstTools\EstToolsServiceProvider::class
 ```
-## Console Artisan
+## Console Est
 
     Update artisan command in settings->commands
     Ctrl+x digit est:install
