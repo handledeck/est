@@ -22,7 +22,10 @@ Add line to file config/app
  //Service provider
   Handledeck\EstTools\EstToolsServiceProvider::class
 ```
-
+## Console Artisan
+ ``` php
+    Update artisan command in settings->commands
+    Ctrl+x digit est:install
 
 ## License
 
