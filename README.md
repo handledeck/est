@@ -1,4 +1,4 @@
-# :package_name
+# handledeck/est-tools
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -17,14 +17,17 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require :handledeck/est-tools
+$ composer require handledeck/est-tools
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+Add line to file config/app
+  // Facade
+ 'Est'=>Handledeck\EstTools\EstFacade::class,
+ //Service provider
+  Handledeck\EstTools\EstToolsServiceProvider::class
 ```
 
 ## Change log
