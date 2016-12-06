@@ -21,11 +21,15 @@ Add line to file config/app
  'Est'=>Handledeck\EstTools\EstFacade::class,
  //Service provider
   Handledeck\EstTools\EstToolsServiceProvider::class
+  Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
 ```
 ## Console Est
 
     Update artisan command in settings->commands
-    Ctrl+Shift-x digit art est:install
+     
+    Ctrl+Shift-x
+     art ide-helper:generate
+     art est:install
 
 ## License
 
