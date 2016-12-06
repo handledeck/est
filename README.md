@@ -25,7 +25,7 @@ Add line to file config/app
 ## Console Est
 
     Update artisan command in settings->commands
-    Ctrl+x digit est:install
+    Ctrl+Shift-x digit art est:install
 
 ## License
 
