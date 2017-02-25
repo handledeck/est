@@ -27,6 +27,9 @@ class EstToolsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../public/images' => public_path('est/images')
         ], 'public');
+	$this->publishes([
+            __DIR__ . '/../views' => public_path('../resources/views')
+        ], 'public');
         //\Artisan::registerCommand(new EstInstall());
 /*        $this->app->bind('est:install', function ($app) {
             return new EstInstall();
