@@ -31,6 +31,7 @@ Add line to file config/app
     Ctrl+Shift-x
      art ide-helper:generate
      art est:install
+     art vendor:publish	
 
 ## License
 
