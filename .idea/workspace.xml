@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="43920ab0-1cd7-45d3-9bb7-8d13484359a6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EstToolsServiceProvider.php" afterPath="$PROJECT_DIR$/src/EstToolsServiceProvider.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,12 +119,20 @@
       <option name="presentableId" value="Default" />
       <updated>1487993733559</updated>
       <workItem from="1487993734839" duration="189000" />
-      <workItem from="1488093501072" duration="164000" />
+      <workItem from="1488093501072" duration="217000" />
     </task>
+    <task id="LOCAL-00001" summary="create databse auth">
+      <created>1488093709857</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488093709857</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353000" />
+    <option name="totallyTimeSpent" value="406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -156,6 +162,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create databse auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="create databse auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
