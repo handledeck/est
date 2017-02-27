@@ -68,7 +68,7 @@ class datas {
     public function something(){
         // some code
         $env_update = $this->changeEnv([
-            'DB_DATABASE'   => 'database/db.sqlite',
+            'DB_DATABASE'   => '../database/db.sqlite',
             'DB_USERNAME'   => 'root',
             'DB_HOST'       => 'root'
         ]);
