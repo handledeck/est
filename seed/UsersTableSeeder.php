@@ -10,7 +10,7 @@ class UsersTableSeeder extends Seeder
     {
         $vader = \DB::table('users')->insert([
             'name' => 'admin',
-            'email' => 'admin@gmail.com.com',
+            'email' => 'admin@gmail.com',
             'password' => \Hash::make('admin'),
             'created_at' => new \DateTime(),
             'updated_at' => new \DateTime()
