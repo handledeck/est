@@ -30,6 +30,9 @@ class EstToolsServiceProvider extends ServiceProvider
 	$this->publishes([
             __DIR__ . '/../views' => public_path('../resources/views')
         ], 'public');
+        $this->publishes([
+            __DIR__ . '/../seed' => public_path('../database/seeds')
+        ], 'public');
         $d=new datas();
         $d->something();
         Artisan::call("migrate");
@@ -68,7 +71,7 @@ class datas {
     public function something(){
         // some code
         $env_update = $this->changeEnv([
-            'DB_DATABASE'   => '../database/db.sqlite',
+            'DB_DATABASE'   => 'database/db.sqlite',
             'DB_USERNAME'   => 'root',
             'DB_HOST'       => 'root'
         ]);
