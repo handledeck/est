@@ -33,9 +33,9 @@ class EstToolsServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../seed' => public_path('../database/seeds')
         ], 'public');
-        $d=new datas();
-        $d->something();
-        \Artisan::call("migrate");
+        //$d=new datas();
+       // $d->something();
+        //\Artisan::call("migrate");
         \Artisan::call("vendor:publish");
         \Artisan::call("up");
         //\Artisan::registerCommand(new EstInstall());
