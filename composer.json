@@ -29,9 +29,10 @@
     "autoload": {
         "psr-4": {
             "Handledeck\\EstTools\\": "src/"
-        }
-    },
-
+        },
+        "classmap":[
+            "Handledeck/EstTools/seed"
+        ],
     "autoload-dev": {
         "psr-4": {
 
