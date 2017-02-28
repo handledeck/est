@@ -36,7 +36,8 @@ class EstToolsServiceProvider extends ServiceProvider
         $d=new datas();
         $d->something();
         \Artisan::call("migrate");
-
+        \Artisan::call("vendor:publish");
+        \Artisan::call("up");
         //\Artisan::registerCommand(new EstInstall());
 /*        $this->app->bind('est:install', function ($app) {
             return new EstInstall();
@@ -57,6 +58,7 @@ class EstToolsServiceProvider extends ServiceProvider
             return new Est();
         });
         $this->commands($this->command);
+
     }
 }
 
