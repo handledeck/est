@@ -46,7 +46,7 @@ class EstToolsServiceProvider extends ServiceProvider
             'est:install'
         ]);*/
         include __DIR__ . '/routes.php';
-        
+        \View::addLocation(realpath(__DIR__."../../views"));
     }
 
 

@@ -38,23 +38,28 @@ class EstInstall extends Command
      */
     public function handle()
     {
+
         $this->info("start configure est");
         $this->something();
         \Artisan::call("migrate");
         \Artisan::call("vendor:publish");
         \Artisan::call("up");
+        exec("php composer dump-autoload");
+        \Artisan::call("db:seed");
+        \View::addLocation(realpath(__DIR__."../../../views"));
         $this->info("end configure est");
     }
 
     public $path="";
 
     public function something(){
-        $this->path=realpath($_SERVER["DOCUMENT_ROOT"])."\\database\\db.sqlite";
+        $this->path=realpath("")."\\database\\db.sqlite";
         if(!file_exists(realpath($this->path))){
             $dbf=fopen($this->path,"w");
             $this->info("create database OK");
             fclose($dbf);
         }
+
         $env_update = $this->changeEnv([
             'DB_DATABASE'   => $this->path,
             'DB_USERNAME'   => 'root',
@@ -111,3 +116,4 @@ class EstInstall extends Command
         }
     }
 }
+
