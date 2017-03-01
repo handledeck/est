@@ -64,16 +64,18 @@ class EstToolsServiceProvider extends ServiceProvider
 
 class datas {
 
+    public $path="";
     function __construct(){
-        if(!file_exists("database/db.sqlite")){
-            $dbf=fopen("database/db.sqlite","w");
+        $this->path=$_SERVER['DOCUMENT_ROOT']."/database/db.sqlite";
+        if(!file_exists($this->path)){
+            $dbf=fopen($this->path,"w");
             fclose($dbf);
         }
     }
     public function something(){
         // some code
         $env_update = $this->changeEnv([
-            'DB_DATABASE'   => 'database/db.sqlite',
+            'DB_DATABASE'   => $this->path,
             'DB_USERNAME'   => 'root',
             'DB_HOST'       => 'root'
         ]);
