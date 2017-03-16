@@ -31,7 +31,7 @@
             "Handledeck\\EstTools\\": "src/"
         },
         "classmap":[
-            "Handledeck/EstTools/seed"
+            "/seed"
         ]
     },
     "autoload-dev": {
