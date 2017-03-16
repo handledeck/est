@@ -32,10 +32,10 @@
         },
         "classmap":[
             "Handledeck/EstTools/seed"
-        ],
+        ]
+    },
     "autoload-dev": {
         "psr-4": {
-
             "Handledeck\\EstTools\\": "tests"
         }
     },
@@ -47,6 +47,5 @@
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
-    }
     }
 }
